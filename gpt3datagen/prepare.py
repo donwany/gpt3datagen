@@ -1,7 +1,7 @@
 import random
 from typing import Any, Dict, List
 
-from .datasets import classification, condition_generation
+from .datasets import classification, condition_generation, news_articles
 from .utils import SaveFile, argParser
 
 
@@ -12,12 +12,11 @@ def generate_samples(
     `sample_type` with a maximum length of `max_length` tokens"""
     samples = []
     if sample_type == "completion":
-        prompts, completions = (
-            condition_generation.prompts,
-            condition_generation.completions,
-        )
+        prompts, completions = condition_generation.prompts,condition_generation.completions
     elif sample_type == "classification":
         prompts, completions = classification.prompts, classification.completions
+    elif sample_type == "news_articles":
+        prompts, completions = news_articles.prompts, news_articles.completions
     for i in range(num_samples):
         # Randomly choose a prompt and completion
         prompt, completion = random.choice(prompts), random.choice(completions)

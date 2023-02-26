@@ -101,6 +101,7 @@ python prepare.py \
 ### Python Usage
 ```python
 from gpt3datagen import prepare
+
 prepare.cli()
 ```
 ### Validate Sample Data
