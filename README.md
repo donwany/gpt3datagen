@@ -8,7 +8,7 @@ GPT3DataGen is a python package that generates fake data for fine-tuning your `o
    __   _ _   | ,_)(_)_) |   _| |   _ _ | ,_)   _ _    __     __    ___
  /'_ `\( '_`\ | |   _(_ <  /'_` | /'_` )| |   /'_` ) /'_ `\ /'__`\/' _ `\
 ( (_) || (_) )| |_ ( )_) |( (_| |( (_| || |_ ( (_| |( (_) |(  ___/| ( ) |
-`\__  || ,__/'`\__)`\____)`\__,_)`\__,_)`\__)`\__,_)`\__  |`\____)(_) (_)
+`\__  || ,__/'`\__)`\____)`\__,_)`\__,_)`\__)`\__,_)`\__  |`\____)(_) (_)v1.0.0
 ( )_) || |                                          ( )_) |
  \___/'(_)                                           \___/'
 
@@ -18,20 +18,19 @@ GPT3DataGen is a python package that generates fake data for fine-tuning your `o
 ### Install with pip
 ```shell
 pip install -U gpt3datagen
-
-gpt3datagen --version
 ```
 Alternatively, the following command will pull and install the latest commit
 from this repository, along with its Python dependencies:
 ```shell
-pip install git+https://github.com/donwany/gpt3datagen.git
-
-cd gpt3datagen
-
-make install
-
-pip install -e . 
+pip install git+https://github.com/donwany/gpt3datagen.git --use-pep517 
 ```
+Or git clone repository:
+```shell
+git clone https://github.com/donwany/gpt3datagen.git
+cd gpt3datagen
+make install && pip install -e .
+```
+
 To update the package to the latest version of this repository, please run:
 ```shell
 pip install --upgrade --no-deps --force-reinstall git+https://github.com/donwany/gpt3datagen.git
@@ -41,6 +40,7 @@ pip install --upgrade --no-deps --force-reinstall git+https://github.com/donwany
 Run the following to view all available options:
 ```shell
 gpt3datagen --help
+gpt3datagen --version
 ```
 Output formats: `jsonl`, `json`, `csv`, `tsv`, `xlsx`
 
