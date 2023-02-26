@@ -15,7 +15,7 @@ GPT3DataGen is a python package that generates fake data for fine-tuning your `o
 
 ```
 
-### Install with pip
+### Install with pip. See [Install & Usage Guide](https://pypi.org/project/gpt3datagen/)
 ```shell
 pip install -U gpt3datagen
 ```

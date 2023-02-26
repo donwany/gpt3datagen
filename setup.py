@@ -46,7 +46,6 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Software Development :: Testing",
         "Topic :: Utilities",
-        "Topic :: Education" "License :: OSI Approved :: MIT License",
     ],
     keywords="GPT3, GPT3 DataGen, Sample Faker, DataGen, Fine-Tune",
     platforms=["any"],
