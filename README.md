@@ -152,7 +152,7 @@ Please see [CONTRIBUTING](https://github.com/donwany/gpt3datagen/blob/main/CONTR
 
 License
 -------
-GPT3DataGen is released under the MIT License. See the bundled [LICENSE](https://github.com/donwany/gpt3datagen/blob/main/LICENSE.txt) file
+GPT3DataGen is released under the MIT License. See the bundled [LICENSE](https://github.com/donwany/gpt3datagen/blob/main/LICENCE.txt) file
 for details.
 
 Credits
