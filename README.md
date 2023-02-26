@@ -43,14 +43,6 @@ gpt3datagen --help
 gpt3datagen --version
 ```
 Output formats: `jsonl`, `json`, `csv`, `tsv`, `xlsx`
-
-### Data Format
-```shell
-{"prompt": "<prompt text> \n\n###\n\n", "completion": " <ideal generated text> END"}
-{"prompt": "<prompt text> \n\n###\n\n", "completion": " <ideal generated text> END"}
-{"prompt": "<prompt text> \n\n###\n\n", "completion": " <ideal generated text> END"}
-                                    ...
-```
 ```shell
 gpt3datagen \
     --num_samples 500 \
@@ -74,7 +66,13 @@ gpt3datagen \
 gpt3datagen --sample_type completion -o . -f jsonl
 gpt3datagen --sample_type news -o . -f jsonl
 ```
-
+### Data Format
+```shell
+{"prompt": "<prompt text> \n\n###\n\n", "completion": " <ideal generated text> END"}
+{"prompt": "<prompt text> \n\n###\n\n", "completion": " <ideal generated text> END"}
+{"prompt": "<prompt text> \n\n###\n\n", "completion": " <ideal generated text> END"}
+                                    ...
+```
 ### Basic Usage
 Only useful if you clone the repository
 ```shell
