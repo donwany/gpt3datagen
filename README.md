@@ -97,12 +97,6 @@ python prepare.py \
     --output_format "json" \
     --output_dir /Users/<tsiameh>/Desktop
 ```
-### Python Usage
-```python
-from gpt3datagen import prepare
-
-prepare.cli()
-```
 ### Validate Sample Data
 ```shell
 pip install --upgrade openai
