@@ -72,6 +72,7 @@ gpt3datagen \
     --output_dir .
     
 gpt3datagen --sample_type completion -o . -f jsonl
+gpt3datagen --sample_type news -o . -f jsonl
 ```
 
 ### Basic Usage

@@ -113,7 +113,7 @@ def argParser():
         "--sample_type",
         type=str,
         default="completion",
-        choices=["completion", "classification", "news_article"],
+        choices=["completion", "classification", "news"],
         help="Type of datasets (Classification, Completion, News Article)",
     )
     parser.add_argument("--version", action="version", version=f"{VERSION}")
