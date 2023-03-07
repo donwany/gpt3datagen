@@ -22,7 +22,7 @@ fine_tuned_model = openai.FineTune.create(
     learning_rate=1e-5,
     labels=["transcription"],
     create=True,
-    stop=[". END"]
+    stop=[". END"],
 )
 
 # Print the fine-tuned model's ID

@@ -1,5 +1,7 @@
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![CI](https://github.com/donwany/gpt3datagen/actions/workflows/CI.yml/badge.svg)](https://github.com/donwany/gpt3datagen/actions/workflows/CI.yml)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+
 ## GPT3DataGen
 GPT3DataGen is a python package that generates fake data for fine-tuning your `openai` models.
 ```markdown
@@ -8,7 +10,7 @@ GPT3DataGen is a python package that generates fake data for fine-tuning your `o
    __   _ _   | ,_)(_)_) |   _| |   _ _ | ,_)   _ _    __     __    ___
  /'_ `\( '_`\ | |   _(_ <  /'_` | /'_` )| |   /'_` ) /'_ `\ /'__`\/' _ `\
 ( (_) || (_) )| |_ ( )_) |( (_| |( (_| || |_ ( (_| |( (_) |(  ___/| ( ) |
-`\__  || ,__/'`\__)`\____)`\__,_)`\__,_)`\__)`\__,_)`\__  |`\____)(_) (_)v1.0.1
+`\__  || ,__/'`\__)`\____)`\__,_)`\__,_)`\__)`\__,_)`\__  |`\____)(_) (_)v1.0.3
 ( )_) || |                                          ( )_) |
  \___/'(_)                                           \___/'
 
@@ -22,7 +24,7 @@ pip install -U gpt3datagen
 Alternatively, the following command will pull and install the latest commit
 from this repository, along with its Python dependencies:
 ```shell
-pip install git+https://github.com/donwany/gpt3datagen.git --use-pep517 
+pip install git+https://github.com/donwany/gpt3datagen.git --use-pep517
 ```
 Or git clone repository:
 ```shell
@@ -50,7 +52,7 @@ gpt3datagen \
     --sample_type "classification" \
     --output_format "jsonl" \
     --output_dir .
-    
+
 gpt3datagen \
     --num_samples 500 \
     --max_length 2048 \
@@ -62,7 +64,7 @@ gpt3datagen \
     --sample_type completion \
     --output_format jsonl \
     --output_dir .
-    
+
 gpt3datagen --sample_type completion -o . -f jsonl
 gpt3datagen --sample_type news -o . -f jsonl
 ```
@@ -89,7 +91,7 @@ python prepare.py \
     --sample_type "completion" \
     --output_format "csv" \
     --output_dir .
-    
+
 python prepare.py \
     --num_samples 500 \
     --max_length 2048 \
@@ -115,7 +117,7 @@ openai tools fine_tunes.prepare_data -f /Users/<tsiameh>/Desktop/data_prepared.j
 openai api fine_tunes.create \
   -t <DATA_PREPARED>.jsonl \
   -m <BASE_MODEL: davinci, curie, ada, babbage>
-  
+
 # List all created fine-tunes
 openai api fine_tunes.list
 ```

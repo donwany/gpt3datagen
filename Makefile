@@ -12,6 +12,10 @@ dist:
 	python setup.py sdist bdist_wheel
 clean:
 	rm -rf dist build gpt3datagen.egg-info
+commit:
+	git add . && git  commit -m "first commit" && git  push -u origin main
+pre-commit:
+	pre-commit run --all-files
 release:
 	rm -rf build dist
 	python setup.py sdist bdist_wheel
