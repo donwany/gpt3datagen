@@ -1,3 +1,3 @@
 pandas
-numpy==1.24.2
-pre-commit==3.1.1
+numpy
+pre-commit

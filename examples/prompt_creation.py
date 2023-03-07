@@ -2,7 +2,7 @@ import csv
 import json
 
 # Read CSV file
-with open("basketball_data.csv", "r") as f:
+with open("all_seasons.csv", "r") as f:
     data = list(csv.reader(f))
     headers = data[0]
     data = data[1:]
