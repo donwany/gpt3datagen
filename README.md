@@ -1,3 +1,4 @@
+![Python 3.7, 3.8, 3.9](https://img.shields.io/badge/Python-3.7%2C%203.8%2C%203.9-3776ab.svg?maxAge=2592000)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![CI](https://github.com/donwany/gpt3datagen/actions/workflows/CI.yml/badge.svg)](https://github.com/donwany/gpt3datagen/actions/workflows/CI.yml)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
@@ -150,6 +151,10 @@ License
 -------
 GPT3DataGen is released under the MIT License. See the bundled [LICENSE](https://github.com/donwany/gpt3datagen/blob/main/LICENCE.txt) file
 for details.
+
+BuyMeCoffee
+-----------
+[![Build](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/theodondrew)
 
 Credits
 -------
