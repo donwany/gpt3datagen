@@ -7,8 +7,10 @@ from .utils import SaveFile, argParser
 def generate_samples(
     num_samples: int, max_length: int, sample_type: str
 ) -> List[Dict[str, Any]]:
-    """Generate `num_samples` samples of type
-    `sample_type` with a maximum length of `max_length` tokens"""
+    """
+    Generate `num_samples` samples of type
+    `sample_type` with a maximum length of `max_length` tokens
+    """
     samples = []
     if sample_type == "completion":
         prompts, completions = (

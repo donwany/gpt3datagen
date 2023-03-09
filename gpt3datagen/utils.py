@@ -9,6 +9,8 @@ from . import VERSION
 
 
 class SaveFile:
+    """A Class to save files in different format"""
+
     @staticmethod
     def mkdir(path):
         """Create directory"""
@@ -22,7 +24,7 @@ class SaveFile:
 
     @staticmethod
     def save_jsonl(file_name="data_sample", data=None, output_dir=None):
-        # Save the samples to a .jsonl file
+        """Save the samples to a .jsonl file"""
         print("Saving results to jsonl...")
         if output_dir is None:
             output_dir = os.getcwd()
@@ -36,7 +38,7 @@ class SaveFile:
 
     @staticmethod
     def save_csv(file_name="data_sample", data=None, output_dir=None):
-        # Save the samples to a .csv file
+        """Save the samples to a .csv file"""
         print("Saving results to csv...")
         if output_dir is None:
             output_dir = os.getcwd()
@@ -51,7 +53,7 @@ class SaveFile:
 
     @staticmethod
     def save_tsv(file_name="data_sample", data=None, output_dir=None):
-        # Save the samples to a .tsv file
+        """Save the samples to a .tsv file"""
         print("Saving results to tsv...")
         if output_dir is None:
             output_dir = os.getcwd()
@@ -68,7 +70,7 @@ class SaveFile:
 
     @staticmethod
     def save_xlsx(file_name="data_sample", data=None, output_dir=None):
-        # Save the samples to an .xlsx file
+        """Save the samples to an .xlsx file"""
         print("Saving results to xlsx...")
         if output_dir is None:
             output_dir = os.getcwd()
@@ -81,7 +83,7 @@ class SaveFile:
 
     @staticmethod
     def save_json(file_name="data_sample", data=None, output_dir=None):
-        # Save the samples to a .json file
+        """Save the samples to a .json file"""
         print("Saving results to json...")
         if output_dir is None:
             output_dir = os.getcwd()
@@ -95,6 +97,7 @@ class SaveFile:
 
 
 def argParser():
+    """ArgParser function"""
     parser = argparse.ArgumentParser(description="Fine-Tune GPT3 Data Generator")
 
     parser.add_argument(
