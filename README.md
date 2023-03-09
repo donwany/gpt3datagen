@@ -2,7 +2,7 @@
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![CI](https://github.com/donwany/gpt3datagen/actions/workflows/CI.yml/badge.svg)](https://github.com/donwany/gpt3datagen/actions/workflows/CI.yml)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
-
+[![Docs](https://img.shields.io/badge/docs-readthedocs.io-ff4980.svg?maxAge=2592000)](https://gpt3datagen.readthedocs.io/en/latest/)
 ## GPT3DataGen
 GPT3DataGen is a python package that generates fake data for fine-tuning your `openai` models.
 ```markdown
