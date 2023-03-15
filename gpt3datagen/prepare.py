@@ -21,7 +21,7 @@ def generate_samples(
         prompts, completions = classification.prompts, classification.completions
     elif sample_type == "news":
         prompts, completions = news_articles.prompts, news_articles.completions
-    for i in range(num_samples):
+    for _ in range(num_samples):
         # Randomly choose a prompt and completion
         prompt, completion = np.random.choice(prompts, replace=False), np.random.choice(
             completions, replace=False
